@@ -17,3 +17,7 @@ config :rumbl, Rumbl.Repo,
   database: "rumbl_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+# Configure Comeonin to ease up on the # of hashing rounds to speed up tests
+config :comeonin, :bcrypt_log_rounds, 4
+config :comeonin, :pbkdf2_rounds, 1

@@ -14,7 +14,11 @@
 import "phoenix_html"
 
 // Import local files
-//
+import socket from "./socket"
+import Video from "./video"
+
+Video.init(socket, document.getElementById("video"))
+
 // Local files can be imported directly using relative
 // paths "./socket" or full ones "web/static/js/socket".
 

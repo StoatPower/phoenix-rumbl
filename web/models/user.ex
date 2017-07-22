@@ -7,6 +7,7 @@ defmodule Rumbl.User do
         field :password, :string, virtual: true #virtual fields are not persisted to the db
         field :password_hash, :string
         has_many :videos, Rumbl.Video
+        has_many :annotations, Rumbl.Annotation
 
         timestamps()
     end
