@@ -29,7 +29,7 @@ defmodule Rumbl.UserSocket do
         :error
     end
   end
-  def connect(_params, socket), do: :error
+  def connect(_params, _socket), do: :error
 
   # Socket id's are topics that allow you to identify all sockets for a given user:
   #
